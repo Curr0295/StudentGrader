@@ -1,0 +1,99 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4caf50;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #59C3C3;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.radio-container label {
+    margin-right: 15px;
+}
+.question-container {
+    border: 2px solid #59C3C3;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #EAF6F6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #59C3C3;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.student-grades-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.student-grades-table th, .student-grades-table td {
+    border: 1px solid #4caf50;
+    padding: 8px;
+    text-align: left;
+}
+
+.student-grades-table th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.student-grades-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-grades-table tbody tr:hover {
+    background-color: #59C3C3;
+    cursor: pointer;
+}
