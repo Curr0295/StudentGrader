@@ -19,7 +19,7 @@
     <input type="submit" value="Submit">
     <a href="signUp.jsp"><input type="button" value="Sign up" ></a>
 </form>
-<a href="home.jsp">Continue as a Guest!</a>
+<a href="home.jsp">Continue as a Guest!</a><br>
 <a href="TeacherInterface.jsp">Continue as a Guest Teacher!</a>
 </body>
 </html>

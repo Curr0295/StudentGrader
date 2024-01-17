@@ -16,7 +16,7 @@
 <h1>Teacher Interface</h1>
 <div id=teacherWelcome>
 <p>Welcome, <%=session.getAttribute("Username") %></p>
-<p>This is the teacher interface. Add your teacher-specific content here.</p>
+<p>This is the teacher interface.</p>
 </div>
 <ul>
   <li><a href="addQuestion.jsp">Add question</a></li>

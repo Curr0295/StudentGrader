@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Success</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
 <h1>Success</h1>

@@ -8,11 +8,8 @@
 </head>
 <body>
 <ul>
-    <li><a href="home.jsp">Home</a></li>
-    <li><a href="results.jsp">Results</a></li>
+    <li><a href="TeacherInterface.jsp">Home</a></li>
     <li><a href="account.jsp">Account</a></li>
-    <li><a href="test.jsp">Take Test</a></li>
-    <li><a href="StudentGradeView.jsp">Your Grades</a></li>
 </ul>
 
 <%
