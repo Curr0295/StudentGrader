@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet("/TestPicker")
-public class Test extends HttpServlet {
+public class TestController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String testId = request.getParameter("test_id");
 
@@ -44,7 +44,9 @@ public class Test extends HttpServlet {
         List<Question> questions = new ArrayList<>();
 
         try (Connection connection = DatabaseConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement("SELECT question_number,question_text, correct_answer, question_id FROM tests WHERE test_name = ? ORDER BY RAND()");
+             PreparedStatement preparedStatement = connection.prepareStatement(
+                     "SELECT question_number,question_text, correct_answer, question_id " +
+                             "FROM tests WHERE test_name = ? ORDER BY RAND()")
         ) {
             preparedStatement.setString(1, testId);
 
@@ -55,7 +57,12 @@ public class Test extends HttpServlet {
                     String question_Text = resultSet.getString("question_text");
                     String correctAnswer = resultSet.getString("correct_answer");
 
-                    Question question = new QuestionBuilder().setQuestionId(questionId).setQuestionNumber(question_number).setQuestionText(question_Text).setCorrectAnswer(correctAnswer).createQuestion();
+                    Question question = new QuestionBuilder()
+                            .setQuestionId(questionId)
+                            .setQuestionNumber(question_number)
+                            .setQuestionText(question_Text)
+                            .setCorrectAnswer(correctAnswer)
+                            .createQuestion();
                     questions.add(question);
                 }
             }

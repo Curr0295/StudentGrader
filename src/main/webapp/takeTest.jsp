@@ -26,6 +26,5 @@
     <input type="hidden" name="action" value="submitTest">
     <input type="submit" value="Submit Test">
 </form>
-
 </body>
 </html>

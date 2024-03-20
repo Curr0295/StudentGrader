@@ -18,7 +18,6 @@
 <ul>
   <li><a href="home.jsp">Home</a></li>
   <li><a href="results.jsp">Results</a></li>
-  <li><a href="account.jsp">Account</a></li>
   <li><a href="test.jsp">Take Test</a></li>
 </ul>
 

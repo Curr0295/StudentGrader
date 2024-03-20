@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" build-on-make="true" name="studentGrader:war exploded2">
-    <output-path>$PROJECT_DIR$/out/artifacts/studentGrader_war_exploded2</output-path>
+  <artifact type="exploded-war" name="studentGrader:war exploded again">
+    <output-path>$PROJECT_DIR$/out/artifacts/studentGrader_war_exploded_again</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -11,7 +11,7 @@
           <element id="library" level="project" name="mysql-connector-j-8.2.0" />
           <element id="library" level="project" name="mysql.connector.java" />
           <element id="library" level="project" name="mysql.connector.java1" />
-          <element id="file-copy" path="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/mysql-connector-java-8.0.18.jar" />
+          <element id="file-copy" path="$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.18/mysql-connector-java-8.0.18.jar" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="studentGrader/web/Web" />

@@ -5,9 +5,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Username {
-    private String Username;
-    private String Password;
-    private String Role;
+    private final String Username;
+    private final String Password;
+    private final String Role;
 
     public Username(String Username, String Password, String Role) {
         this.Username = Username;
@@ -19,16 +19,8 @@ public class Username {
         return Username;
     }
 
-    public String getPassword() {
-        return Password;
-    }
-
     public String getRole() {
         return Role;
-    }
-
-    public void setRole(String role) {
-        this.Role = role;
     }
 
     public void saveToDatabase(Connection connection) throws SQLException {

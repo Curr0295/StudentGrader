@@ -9,7 +9,6 @@
 <body>
 <ul>
     <li><a href="TeacherInterface.jsp">Home</a></li>
-    <li><a href="account.jsp">Account</a></li>
 </ul>
 <h2>Search for a student</h2>
 <form action="GradeSearchServlet" method="post">

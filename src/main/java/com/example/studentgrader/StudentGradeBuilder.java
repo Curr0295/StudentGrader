@@ -19,12 +19,6 @@ public class StudentGradeBuilder {
         this.testId = testId;
         return this;
     }
-    public StudentGradeBuilder getTestId(int testId) {
-        this.testId = testId;
-        return this;
-    }
-
-
 
     public StudentGrade createStudentGrade() {
         return new StudentGrade(studentName, score, testId);
